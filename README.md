@@ -39,21 +39,21 @@ Valeo-ULS-Simulation/
 
 The system receives 2-character commands through UART. Each command follows this format:
 
-<number><code>
+`<number><code>`
 
 Where:
-- <number> is the sensor number (1–4 in current prototype)
-- <code> is one of the following:
-  - V = Short to battery
-  - G = Short to ground
-  - C = Open circuit
-  - S = Connected (normal operation)
+- `<number>` is the sensor number (1–4 in current prototype)
+- `<code>` is one of the following:
+  - `V` = Short to battery
+  - `G` = Short to ground
+  - `C` = Open circuit
+  - `S` = Connected (normal operation)
 
 Example commands:
-- 1V → Sensor 1: short to battery  
-- 2G → Sensor 2: short to ground  
-- 3C → Sensor 3: open circuit  
-- 4S → Sensor 4: connected  
+- `1V` → Sensor 1: short to battery  
+- `2G` → Sensor 2: short to ground  
+- `3C` → Sensor 3: open circuit  
+- `4S` → Sensor 4: connected  
 
 Invalid commands are ignored with a warning.
 
@@ -89,13 +89,7 @@ Although a PCB was designed and sent for manufacturing, the current working prot
 
 - Arturo Urías  
 - Ale Montelongo  
-- Gabriel Lascurain
-- Ana Carolina Coronel
-- Yumee Chung
-- Victoria Lilian Robles Vargas
-- Josemaría De Alba Arguelles
-- Samantha Erin Medina Muñoz
-- Ricardo Ruiz Cano
+- Gabriel Lascurain  
 
 Supervised by:  
 Professor Agustín Domínguez
