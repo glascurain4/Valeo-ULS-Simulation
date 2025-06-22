@@ -83,7 +83,7 @@ The breadboard prototype uses the following components:
 
 Relays were selected over multiplexers to ensure better current conduction and realistic ECU response.
 
-Although a PCB was designed and sent for manufacturing, the current working prototype is implemented on a breadboard.
+PCB modules were designed for a more professional finishing.
 
 ## Authors
 
