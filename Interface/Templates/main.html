@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Valeo Project</title>
+    <style>
+      body {
+        background-color: rgb(208, 229, 222);
+        margin: 0;
+        font-family: Georgia, serif;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 15px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 2px black;
+      }
+
+      .logo img {
+        width: 100px;
+        height: auto;
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+
+      nav a {
+        /*Texto head*/
+        color: rgba(0, 0, 0, 0.927);
+        font-size: 20px;
+        text-decoration: none;
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+
+      nav a:hover {
+        text-decoration: underline; /*Subrayar selección*/
+      }
+
+      .sensor-section {
+        text-align: center; /*Centrar texto Parking sensors*/
+      }
+
+      .sensor-section h2 {
+        /*Texto Parking sensors*/
+        font-size: 44px;
+        margin-bottom: 40px;
+        color: #000000;
+      }
+
+      .sensor-container {
+        /*Margen dentro de los sensores*/
+        background-color: #ecf5ea;
+        padding: 40px 20px;
+        border-radius: 15px;
+        max-width: 800px;
+        margin: 0 auto;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .sensor-line {
+        /*Margen dentro de los sensores*/
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 34px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .sensor-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .circle {
+        width: 40px;
+        height: 40px;
+        background-color: #595757;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 20px;
+      }
+
+      .square-btn {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        font-weight: bold;
+      }
+
+      .yellow {
+        background-color: #eacd5b;
+      }
+      .red {
+        background-color: #f75a5a;
+      }
+      .black {
+        background-color: #000000;
+        color: white;
+      }
+      .green {
+        background-color: #5fe25f;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="https://www.manuales.mx/thumbs/brands/l/7287-valeo_logo.webp"
+          alt="Valeo Logo"
+        />
+      </div>
+      <nav>
+        <a href="project.html">About the project</a>
+        <a href="us.html">About the team</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="sensor-section">
+        <h2>Front parking sensors</h2>
+        <div class="sensor-container">
+          <div class="sensor-line">
+            <div class="sensor-item">
+              <span class="circle" id="1">1</span>
+              <div class="buttons">
+                <button
+                  class="square-btn black"
+                  onclick="handleButtonClick('1', 'black', 'V')"
+                >
+                  V
+                </button>
+                <button
+                  class="square-btn red"
+                  onclick="handleButtonClick('1', 'red', 'G')"
+                >
+                  G
+                </button>
+                <button
+                  class="square-btn yellow"
+                  onclick="handleButtonClick('1', 'yellow', 'C')"
+                >
+                  C
+                </button>
+                <button
+                  class="square-btn green"
+                  onclick="handleButtonClick('1', 'green', 'S')"
+                >
+                  S
+                </button>
+              </div>
+            </div>
+            <div class="sensor-item">
+              <span class="circle" id="2">2</span>
+              <div class="buttons">
+                <button
+                  class="square-btn black"
+                  onclick="handleButtonClick('2', 'black', 'V')"
+                >
+                  V
+                </button>
+                <button
+                  class="square-btn red"
+                  onclick="handleButtonClick('2', 'red', 'G')"
+                >
+                  G
+                </button>
+                <button
+                  class="square-btn yellow"
+                  onclick="handleButtonClick('2', 'yellow', 'C')"
+                >
+                  C
+                </button>
+                <button
+                  class="square-btn green"
+                  onclick="handleButtonClick('2', 'green', 'S')"
+                >
+                  S
+                </button>
+              </div>
+            </div>
+            <div class="sensor-item">
+              <span class="circle" id="3">3</span>
+              <div class="buttons">
+                <button
+                  class="square-btn black"
+                  onclick="handleButtonClick('3', 'black', 'V')"
+                >
+                  V
+                </button>
+                <button
+                  class="square-btn red"
+                  onclick="handleButtonClick('3', 'red', 'G')"
+                >
+                  G
+                </button>
+                <button
+                  class="square-btn yellow"
+                  onclick="handleButtonClick('3', 'yellow', 'C')"
+                >
+                  C
+                </button>
+                <button
+                  class="square-btn green"
+                  onclick="handleButtonClick('3', 'green', 'S')"
+                >
+                  S
+                </button>
+              </div>
+            </div>
+            <div class="sensor-item">
+              <span class="circle" id="4">4</span>
+              <div class="buttons">
+                <button
+                  class="square-btn black"
+                  onclick="handleButtonClick('4', 'black', 'V')"
+                >
+                  V
+                </button>
+                <button
+                  class="square-btn red"
+                  onclick="handleButtonClick('4', 'red', 'G')"
+                >
+                  G
+                </button>
+                <button
+                  class="square-btn yellow"
+                  onclick="handleButtonClick('4', 'yellow', 'C')"
+                >
+                  C
+                </button>
+                <button
+                  class="square-btn green"
+                  onclick="handleButtonClick('4', 'green', 'S')"
+                >
+                  S
+                </button>
+              </div>
+            </div>
+            <div class="sensor-item">
+              <span class="circle" id="5">5</span>
+              <div class="buttons">
+                <button
+                  class="square-btn black"
+                  onclick="handleButtonClick('5', 'black', 'V')"
+                >
+                  V
+                </button>
+                <button
+                  class="square-btn red"
+                  onclick="handleButtonClick('5', 'red', 'G')"
+                >
+                  G
+                </button>
+                <button
+                  class="square-btn yellow"
+                  onclick="handleButtonClick('5', 'yellow', 'C')"
+                >
+                  C
+                </button>
+                <button
+                  class="square-btn green"
+                  onclick="handleButtonClick('5', 'green', 'S')"
+                >
+                  S
+                </button>
+              </div>
+            </div>
+            <div class="sensor-item">
+              <span class="circle" id="6">6</span>
+              <div class="buttons">
+                <button
+                  class="square-btn black"
+                  onclick="handleButtonClick('6', 'black', 'V')"
+                >
+                  V
+                </button>
+                <button
+                  class="square-btn red"
+                  onclick="handleButtonClick('6', 'red', 'G')"
+                >
+                  G
+                </button>
+                <button
+                  class="square-btn yellow"
+                  onclick="handleButtonClick('6', 'yellow', 'C')"
+                >
+                  C
+                </button>
+                <button
+                  class="square-btn green"
+                  onclick="handleButtonClick('6', 'green', 'S')"
+                >
+                  S
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sensor-section">
+        <h2>Back Parking sensors</h2>
+        <div class="sensor-container">
+          <div class="sensor-line">
+            <div class="sensor-item">
+              <span class="circle" id="Back 1">1</span>
+              <div class="buttons">
+                <button
+                  class="square-btn black"
+                  onclick="handleButtonClick('Back 1', 'black', 'V')"
+                >
+                  V
+                </button>
+                <button
+                  class="square-btn red"
+                  onclick="handleButtonClick('Back 1', 'red', 'G')"
+                >
+                  G
+                </button>
+                <button
+                  class="square-btn yellow"
+                  onclick="handleButtonClick('Back 1', 'yellow', 'C')"
+                >
+                  C
+                </button>
+                <button
+                  class="square-btn green"
+                  onclick="handleButtonClick('Back 1', 'green', 'S')"
+                >
+                  S
+                </button>
+              </div>
+            </div>
+            <div class="sensor-item">
+              <span class="circle" id="Back 2">2</span>
+              <div class="buttons">
+                <button
+                  class="square-btn black"
+                  onclick="handleButtonClick('Back 2', 'black', 'V')"
+                >
+                  V
+                </button>
+                <button
+                  class="square-btn red"
+                  onclick="handleButtonClick('Back 2', 'red', 'G')"
+                >
+                  G
+                </button>
+                <button
+                  class="square-btn yellow"
+                  onclick="handleButtonClick('Back 2', 'yellow', 'C')"
+                >
+                  C
+                </button>
+                <button
+                  class="square-btn green"
+                  onclick="handleButtonClick('Back 2', 'green', 'S')"
+                >
+                  S
+                </button>
+              </div>
+            </div>
+            <div class="sensor-item">
+              <span class="circle" id="Back 3">3</span>
+              <div class="buttons">
+                <button
+                  class="square-btn black"
+                  onclick="handleButtonClick('Back 3', 'black', 'V')"
+                >
+                  V
+                </button>
+                <button
+                  class="square-btn red"
+                  onclick="handleButtonClick('Back 3', 'red', 'G')"
+                >
+                  G
+                </button>
+                <button
+                  class="square-btn yellow"
+                  onclick="handleButtonClick('Back 3', 'yellow', 'C')"
+                >
+                  C
+                </button>
+                <button
+                  class="square-btn green"
+                  onclick="handleButtonClick('Back 3', 'green', 'S')"
+                >
+                  S
+                </button>
+              </div>
+            </div>
+            <div class="sensor-item">
+              <span class="circle" id="Back 4">4</span>
+              <div class="buttons">
+                <button
+                  class="square-btn black"
+                  onclick="handleButtonClick('Back 4', 'black', 'V')"
+                >
+                  V
+                </button>
+                <button
+                  class="square-btn red"
+                  onclick="handleButtonClick('Back 4', 'red', 'G')"
+                >
+                  G
+                </button>
+                <button
+                  class="square-btn yellow"
+                  onclick="handleButtonClick('Back 4', 'yellow', 'C')"
+                >
+                  C
+                </button>
+                <button
+                  class="square-btn green"
+                  onclick="handleButtonClick('Back 4', 'green', 'S')"
+                >
+                  S
+                </button>
+              </div>
+            </div>
+            <div class="sensor-item">
+              <span class="circle" id="Back 5">5</span>
+              <div class="buttons">
+                <button
+                  class="square-btn black"
+                  onclick="handleButtonClick('Back 5', 'black', 'V')"
+                >
+                  V
+                </button>
+                <button
+                  class="square-btn red"
+                  onclick="handleButtonClick('Back 5', 'red', 'G')"
+                >
+                  G
+                </button>
+                <button
+                  class="square-btn yellow"
+                  onclick="handleButtonClick('Back 5', 'yellow', 'C')"
+                >
+                  C
+                </button>
+                <button
+                  class="square-btn green"
+                  onclick="handleButtonClick('Back 5', 'green', 'S')"
+                >
+                  S
+                </button>
+              </div>
+            </div>
+            <div class="sensor-item">
+              <span class="circle" id="Back 6">6</span>
+              <div class="buttons">
+                <button
+                  class="square-btn black"
+                  onclick="handleButtonClick('Back 6', 'black', 'V')"
+                >
+                  V
+                </button>
+                <button
+                  class="square-btn red"
+                  onclick="handleButtonClick('Back 6', 'red', 'G')"
+                >
+                  G
+                </button>
+                <button
+                  class="square-btn yellow"
+                  onclick="handleButtonClick('Back 6', 'yellow', 'C')"
+                >
+                  C
+                </button>
+                <button
+                  class="square-btn green"
+                  onclick="handleButtonClick('Back 6', 'green', 'S')"
+                >
+                  S
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      async function handleButtonClick(circleId, color, value) {
+        try {
+          const circle = document.getElementById(circleId);
+          circle.classList.remove("yellow", "red", "black", "green");
+          circle.classList.add(color);
+
+          const response = await fetch("http://localhost:9090/send-command", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              sensor: circleId,
+              value: value,
+              color: color,
+            }),
+          });
+
+          console.log("Respuesta:", await response.json());
+        } catch (error) {
+          console.error("Error:", error);
+        }
+      }
+    </script>
+  </body>
+</html>
