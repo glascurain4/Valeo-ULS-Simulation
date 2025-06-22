@@ -89,7 +89,11 @@ Although a PCB was designed and sent for manufacturing, the current working prot
 
 - Arturo Urías  
 - Ale Montelongo  
-- Gabriel Lascurain  
+- Gabriel Lascurain
+- Ana Carolina Coronel
+- Yumee Chung
+- Victoria Lilian Robles Vargas
+- Josemaría De Alba Arguelles
 
 Supervised by:  
 Professor Agustín Domínguez
