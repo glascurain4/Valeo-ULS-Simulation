@@ -94,6 +94,8 @@ Although a PCB was designed and sent for manufacturing, the current working prot
 - Yumee Chung
 - Victoria Lilian Robles Vargas
 - Josemaría De Alba Arguelles
+- Samantha Erin Medina Muñoz
+- Ricardo Ruiz Cano
 
 Supervised by:  
 Professor Agustín Domínguez
