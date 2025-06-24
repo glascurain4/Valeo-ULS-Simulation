@@ -18,7 +18,7 @@ This enables engineers to safely test and validate ECU behavior without modifyin
 - Real-time fault simulation for up to 12 sensors
 - Serial (UART) communication with a PC
 - Graphical user interface for intuitive control
-- Custom PCB design (not implemented in current prototype)
+- Custom PCB design
 - Modular breadboard-based hardware setup
 - Terminal and GUI-based control
 
