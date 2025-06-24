@@ -27,8 +27,8 @@ This enables engineers to safely test and validate ECU behavior without modifyin
 ```
 Valeo-ULS-Simulation/
 ├── Hardware/              # PCB layout files and curcuit simulation
+├── Interface/            # Python GUI and FastAPI server
 ├── Microcontroller/                # Embedded C code for ATmega328P
-├── Interface/               # Python GUI and FastAPI server
 ├── Final_Presentation.pdf/
 ├── Project_Documentarion.pdf
 ├── README.md
