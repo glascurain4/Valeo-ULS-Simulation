@@ -30,7 +30,7 @@ Valeo-ULS-Simulation/
 ├── Interface/            # Python GUI and FastAPI server
 ├── Microcontroller/                # Embedded C code for ATmega328P
 ├── Final_Presentation.pdf/
-├── Project_Documentarion.pdf
+├── Project_Documentarion.pdf/
 ├── README.md
 ```
 
